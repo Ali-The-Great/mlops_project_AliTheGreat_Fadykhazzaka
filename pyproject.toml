@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "flower-generation"
+version = "0.1.0"
+description = ""
+authors = ["Ali-The-Great <technologyisevil8@gmail.com>"]
+readme = "README.md"
+packages = [{include = "flower_generation", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+tensorflow-io-gcs-filesystem = "0.26.0"
+tensorflow = "<2.11"
+numpy = "<2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
